@@ -1,0 +1,12 @@
+{
+  "name": "avatar-backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Zero-dependency Node backend that creates/ends Tavus conversations for the avatar demo",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node --watch server.mjs",
+    "start": "node server.mjs"
+  }
+}

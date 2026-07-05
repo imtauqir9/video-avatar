@@ -1,0 +1,27 @@
+{
+  "name": "avatar-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "concurrently -k -n backend,web -c blue,magenta \"npm:dev:backend\" \"npm:dev:web\"",
+    "dev:backend": "node --watch backend/server.mjs",
+    "dev:web": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@daily-co/daily-js": "latest",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.1.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  }
+}
